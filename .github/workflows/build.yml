@@ -1,0 +1,30 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.7'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: python train.py
+      - run: mkdir resources
+      - run: mv predict.py resources
+      - run: mv model.pickle resources
+      - run: mkdir actico.python-example
+      - run: cd actico.python-example
+      - run: mkdir example
+      - run: cd example
+      - run: mv assets/modelproject.actico example
+      - run: mv resources example
+      - run: java -jar assets/actico-cli.jar package-python --module-id "actico.python-example" --stream 1 --files-directory "..\actico.python-example"
+      - run: java -jar assets/actico-cli.jar upload-release -f "assets/releases/[actico.python-example][1]-release.zip" -url https://modelhub.demo.actico.com/ -k ZmFiY290MDF+ZTMyMTAzMDJkODE4OTkxZjU5ZTBjYWQ3MjUwYWQwMGUyOTIzNWJmNzFmNmZlZGU1NDM1MzE0NzgyNjlkNjIwMg==
