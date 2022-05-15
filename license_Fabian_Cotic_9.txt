@@ -1,0 +1,14 @@
+-----BEGIN SIGNATURE-----
+g7IWxhhMZXaj81dFiXy20U392XC6mAdw7mtKMEEp/La/zGZ/TgfGWQAzvvaIHc0JsEgEk8p0t4lW
+bY3eymgAcr0qi+4YwpTmtvo+bTwHdbA44kBFJ8sw7upGsitRIWwV60lNfpNBYdWKOdxAJF8RRHZB
+LiFPvpU9SGLRc2hki8c=
+------END SIGNATURE------
+validdate    = UNLIMITED
+features     = Execution Server,Machine Learning,Machine Learning Training,Model Hub,Model Hub Release Repository and Deployment,Model Hub Model Versioning,Model Hub Build,Model Hub Model Versioning,Model Hub Release Repository and Deployment,Platform CLI,Workplace
+creationdate = 12.02.2021
+licensetype  = full
+majorversion = 9
+plugins      = com.actico.executionserver,com.actico.machinelearning,com.actico.machinelearning.training,com.actico.modelhub,com.actico.modelhub.release-repository-and-deployment,com.actico.modelhub.execution-trace,com.actico.modelhub.model-versioning,com.actico.modelhub.build,com.actico.platform.cli,com.actico.workplace
+name         = Fabian Cotic
+company      = ACTICO GmbH
+email        = fabian.cotic@actico.com
