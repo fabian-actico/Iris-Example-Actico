@@ -26,6 +26,8 @@ jobs:
       - run: cd example
       - run: mv assets/modelproject.actico example
       - run: mv resources example
+      - run: ls
+      - run: pwd
       - run: cd assets
       - run: pwd
       - run: mv license_Fabian_Cotic_9.txt /home/runner/.actico/license
