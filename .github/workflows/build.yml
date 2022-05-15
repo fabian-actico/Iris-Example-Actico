@@ -20,6 +20,13 @@ jobs:
       
       - run: pwd
       - run: ls
+      
+      - run: cd /home/runner/ 
+      - run: mkdir .actico
+      - run: cd .actico
+      - run: mkdir license
+      
+      - run: cd /home/runner/work/Iris-Example-Actico/Iris-Example-Actico
       - run: mv license_Fabian_Cotic_9.txt /home/runner/.actico/license
       
       - run: mkdir resources
