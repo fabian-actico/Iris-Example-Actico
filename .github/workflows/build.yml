@@ -26,5 +26,5 @@ jobs:
       - run: cd example
       - run: mv assets/modelproject.actico example
       - run: mv resources example
-      - run: java -jar assets/actico-cli.jar package-python --module-id "actico.python-example" --stream 1 --files-directory "/home/runner/work/Iris-Example-Actico/Iris-Example-Actico/actico.python-example" --licensedirectory "/home/runner/work/Iris-Example-Actico/Iris-Example-Actico/license_Fabian_Cotic_9.txt"
+      - run: java -jar assets/actico-cli.jar package-python --module-id "actico.python-example" --stream 1 --files-directory "/home/runner/work/Iris-Example-Actico/Iris-Example-Actico/actico.python-example" -ld "/home/runner/work/Iris-Example-Actico/Iris-Example-Actico/license_Fabian_Cotic_9.txt"
       - run: java -jar assets/actico-cli.jar upload-release -f "assets/releases/[actico.python-example][1]-release.zip" -url https://modelhub.demo.actico.com/ -k ZmFiY290MDF+ZTMyMTAzMDJkODE4OTkxZjU5ZTBjYWQ3MjUwYWQwMGUyOTIzNWJmNzFmNmZlZGU1NDM1MzE0NzgyNjlkNjIwMg==
