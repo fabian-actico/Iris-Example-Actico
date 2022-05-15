@@ -18,6 +18,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python train.py
       
+      - run: pwd
+      - run: ls
       - run: mv license_Fabian_Cotic_9.txt /home/runner/.actico/license
       
       - run: mkdir resources
