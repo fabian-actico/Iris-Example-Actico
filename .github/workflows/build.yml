@@ -30,6 +30,4 @@ jobs:
       - run: cd example
       - run: mv assets/modelproject.actico example
       - run: mv resources example
-      
-      # Create Release and Deploy to MH
-      - run: java -jar assets/actico-cli.jar 
+     
